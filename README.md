@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/restaurant_customer_intelligence_banner.png"
+       alt="Restaurant Customer Intelligence"
+       width="100%">
+</p>
+
 # Restaurant Customer Intelligence
 
 End-to-end customer analytics project for a multi-city restaurant business, focused on transforming customer data into actionable commercial strategies.
