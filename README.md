@@ -253,6 +253,8 @@ Processed analytical datasets are excluded from version control.
 - VS Code
 - Git
 - GitHub
+- Power BI
+- DAX
 
 Analytical techniques include:
 
@@ -267,6 +269,57 @@ Analytical techniques include:
 - geographic affinity analysis
 - business KPI development
 - experimental design
+
+---
+
+## Power BI Dashboard
+
+The final stage of the project translates the customer segmentation analysis into an interactive business intelligence dashboard designed for commercial decision-making.
+
+The dashboard was developed in **Power BI** using the final segmented customer dataset and consists of two analytical views.
+
+### Executive Overview
+
+The Executive Overview provides a high-level view of customer behavior and the commercial importance of each segment.
+
+![Executive Overview](dashboard/dashboard_executive_overview.png)
+
+Key metrics include:
+
+- **30,000 customers**
+- **32.60 average food spending**
+- **4.27 average visit frequency**
+- **42.8% Premium membership rate**
+
+The dashboard also compares each segment's share of customers with its estimated share of commercial value.
+
+The **High-Value Loyalists** segment represents only **16.1% of customers**, but contributes approximately **48.9% of the estimated commercial value**, highlighting the importance of retention and value-protection strategies.
+
+> **Methodological note:** Estimated Commercial Value is a relative analytical proxy calculated at customer level as visit frequency × average food spending. It should not be interpreted as actual revenue, sales, or Customer Lifetime Value.
+
+### Geographic Strategy
+
+The Geographic Strategy view extends the segmentation analysis to the city level.
+
+![Geographic Strategy](dashboard/dashboard_geographic_strategy.png)
+
+The dashboard highlights geographic differences in customer composition and identifies market-specific opportunities.
+
+Key findings include:
+
+- **Miami** has the highest concentration of High-Value Loyalists at **22.7%**, supporting a strategy focused on protecting and retaining high-value customers.
+- **NYC** shows a strong concentration of Conversion Potential customers, suggesting opportunities for Premium conversion and engagement strategies.
+- **Chicago** has a comparatively strong Low Engagement presence, supporting customer reactivation and frequency-growth initiatives.
+
+These findings are translated directly into three recommended market actions:
+
+- **Miami — Protect High-Value**
+- **NYC — Convert Potential**
+- **Chicago — Reactivate Customers**
+
+The interactive Power BI report is available at:
+
+`dashboard/restaurant_customer_intelligence.pbix`
 
 ---
 
@@ -289,14 +342,16 @@ With transactional and longitudinal restaurant data, the framework could be exte
 
 ## Next Steps
 
-Future development of the project will focus on:
+Future development of the project could extend the current customer intelligence framework through:
 
-- interactive customer intelligence dashboard
-- segment and city filtering
-- visual KPI monitoring
+- integration of transactional and longitudinal restaurant data
+- Customer Lifetime Value modeling
+- churn and retention prediction
+- campaign response modeling
+- recommendation systems
 - automated customer strategy recommendations
-- integration of transactional restaurant data
-- predictive customer analytics
-
+- interactive filtering and drill-down analysis
+- deployment of the analytical workflow for real restaurant data
+- development of a local market intelligence layer using restaurant data from specific markets
 
 Data Analytics & Data Science Portfolio Project
